@@ -1128,6 +1128,16 @@
 		)
 		(uuid "1460af3d-b1f4-408c-91ac-7039b54f8ea1")
 	)
+	(text "~20uF/ea effective @5.45VDC"
+		(exclude_from_sim no)
+		(at 195.834 103.378 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "30e15952-6001-4cda-a0d5-08d5a4d7dd52")
+	)
 	(text "5.45V Out\nVout= 0.765(1+(R1/R2))"
 		(exclude_from_sim no)
 		(at 137.414 106.68 0)
@@ -1137,6 +1147,16 @@
 			)
 		)
 		(uuid "36484e87-f736-41dc-acd1-34265b7a318e")
+	)
+	(text "~3uF/ea effective @12VDC"
+		(exclude_from_sim no)
+		(at 99.06 104.902 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "86b82b08-74cc-464e-8162-4bb23c7593b9")
 	)
 	(junction
 		(at 173.99 93.98)
@@ -2250,7 +2270,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "GRM21BR61E106KA73L"
+		(property "MPN" "TMK212BBJ106MG-T"
 			(at 104.14 90.17 0)
 			(effects
 				(font
@@ -2259,7 +2279,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer" "Taiyo Yuden"
 			(at 104.14 90.17 0)
 			(effects
 				(font
@@ -2402,7 +2422,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "GRM21BR61E106KA73L"
+		(property "MPN" "TMK212BBJ106MG-T"
 			(at 93.98 90.17 0)
 			(effects
 				(font
@@ -2411,7 +2431,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer" "Taiyo Yuden"
 			(at 93.98 90.17 0)
 			(effects
 				(font
@@ -2480,7 +2500,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 22UF 25V X5R 1210"
+		(property "Description" "CAP CER 22UF 35V X5R 1210"
 			(at 187.96 90.17 0)
 			(effects
 				(font
@@ -2489,7 +2509,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL32A226KAJNNWE"
+		(property "MPN" "GMK325BJ226MM-P"
 			(at 187.96 90.17 0)
 			(effects
 				(font
@@ -2498,7 +2518,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" "Taiyo Yuden"
 			(at 187.96 90.17 0)
 			(effects
 				(font
@@ -2784,7 +2804,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 22UF 25V X5R 1210"
+		(property "Description" "CAP CER 22UF 35V X5R 1210"
 			(at 198.12 90.17 0)
 			(effects
 				(font
@@ -2793,7 +2813,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL32A226KAJNNWE"
+		(property "MPN" "GMK325BJ226MM-P"
 			(at 198.12 90.17 0)
 			(effects
 				(font
@@ -2802,7 +2822,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" "Taiyo Yuden"
 			(at 198.12 90.17 0)
 			(effects
 				(font
