@@ -6,8 +6,8 @@
 	(paper "A3")
 	(title_block
 		(title "Trigger Output FMC")
-		(date "2026-05-07")
-		(rev "1.0")
+		(date "2026-10-06")
+		(rev "1.1")
 		(company "SPDX-FileCopyrightText: 2025 Osprey DCS")
 		(comment 1 "SPDX-License-Identifier: CERN-OHL-S-2.0+")
 	)
@@ -6655,7 +6655,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "GRM21BR61E106KA73L"
+		(property "MPN" "TMK212BBJ106MG-T"
 			(at 194.31 54.61 0)
 			(effects
 				(font
@@ -6664,7 +6664,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer" "Taiyo Yuden"
 			(at 194.31 54.61 0)
 			(effects
 				(font
@@ -7717,7 +7717,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "45430099-9b1e-40e5-b0af-18a2517479a5")
 		(property "Reference" "TP7"
@@ -8556,7 +8556,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "GRM21BR61E106KA73L"
+		(property "MPN" "TMK212BBJ106MG-T"
 			(at 298.45 54.61 0)
 			(effects
 				(font
@@ -8565,7 +8565,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer" "Taiyo Yuden"
 			(at 298.45 54.61 0)
 			(effects
 				(font
@@ -8786,7 +8786,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "GRM21BR61E106KA73L"
+		(property "MPN" "TMK212BBJ106MG-T"
 			(at 248.92 55.88 0)
 			(effects
 				(font
@@ -8795,7 +8795,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer" "Taiyo Yuden"
 			(at 248.92 55.88 0)
 			(effects
 				(font
@@ -8877,7 +8877,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "GRM21BR61E106KA73L"
+		(property "MPN" "TMK212BBJ106MG-T"
 			(at 175.26 88.9 0)
 			(effects
 				(font
@@ -8886,7 +8886,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer" "Taiyo Yuden"
 			(at 175.26 88.9 0)
 			(effects
 				(font
@@ -8969,7 +8969,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "GRM21BR61E106KA73L"
+		(property "MPN" "TMK212BBJ106MG-T"
 			(at 143.51 55.88 0)
 			(effects
 				(font
@@ -8978,7 +8978,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer" "Taiyo Yuden"
 			(at 143.51 55.88 0)
 			(effects
 				(font
@@ -9354,7 +9354,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "807fd692-de3d-4059-91ac-31e37b856f43")
 		(property "Reference" "TP5"
@@ -9838,7 +9838,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "GRM21BR61E106KA73L"
+		(property "MPN" "TMK212BBJ106MG-T"
 			(at 293.37 88.9 0)
 			(effects
 				(font
@@ -9847,7 +9847,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer" "Taiyo Yuden"
 			(at 293.37 88.9 0)
 			(effects
 				(font
@@ -11792,7 +11792,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "GRM21BR61E106KA73L"
+		(property "MPN" "TMK212BBJ106MG-T"
 			(at 184.15 106.68 0)
 			(effects
 				(font
@@ -11801,7 +11801,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer" "Taiyo Yuden"
 			(at 184.15 106.68 0)
 			(effects
 				(font

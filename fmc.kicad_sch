@@ -6,8 +6,8 @@
 	(paper "USLedger")
 	(title_block
 		(title "Trigger Output FMC")
-		(date "2026-05-07")
-		(rev "1.0")
+		(date "2026-10-06")
+		(rev "1.1")
 		(company "SPDX-FileCopyrightText: 2025 Osprey DCS")
 		(comment 1 "SPDX-License-Identifier: CERN-OHL-S-2.0+")
 	)
@@ -13091,7 +13091,7 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 208.28) (xy 34.29 208.28)
+			(xy 31.75 208.28) (xy 34.29 208.28)
 		)
 		(stroke
 			(width 0)
@@ -15161,6 +15161,16 @@
 	)
 	(wire
 		(pts
+			(xy 31.75 181.61) (xy 34.29 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84ce1ceb-6b2b-48ae-ad9f-9d8c6fb5ce5c")
+	)
+	(wire
+		(pts
 			(xy 195.58 124.46) (xy 195.58 129.54)
 		)
 		(stroke
@@ -15561,7 +15571,7 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 231.14) (xy 34.29 231.14)
+			(xy 31.75 231.14) (xy 34.29 231.14)
 		)
 		(stroke
 			(width 0)
@@ -16711,16 +16721,6 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 181.61) (xy 33.02 181.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c1c14f66-8179-4852-b84f-bb7da4d32fd0")
-	)
-	(wire
-		(pts
 			(xy 177.8 144.78) (xy 177.8 147.32)
 		)
 		(stroke
@@ -17011,7 +17011,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 88.9) (xy 198.12 88.9)
+			(xy 152.4 88.9) (xy 198.12 88.9)
 		)
 		(stroke
 			(width 0)
@@ -18379,7 +18379,7 @@
 		)
 		(uuid "20924af0-ba2a-41e7-a702-42880b38997a")
 	)
-	(label "Cleaner_~{OE}_1"
+	(label "Cleaner_LevelShift_~{OE}_1"
 		(at 86.36 114.3 180)
 		(effects
 			(font
@@ -18519,7 +18519,7 @@
 		)
 		(uuid "3c3769d4-d9da-4e46-a8e3-f8503ce1258a")
 	)
-	(label "Cleaner_~{OE}_0"
+	(label "Cleaner_LevelShift_~{OE}_0"
 		(at 86.36 58.42 180)
 		(effects
 			(font
@@ -19279,7 +19279,7 @@
 		)
 		(uuid "c9d51734-6866-4794-bb5e-f79d597b7e66")
 	)
-	(label "Cleaner_~{OE}_1"
+	(label "Cleaner_LevelShift_~{OE}_1"
 		(at 360.68 80.01 0)
 		(effects
 			(font
@@ -19409,8 +19409,8 @@
 		)
 		(uuid "ddef3721-49c7-4cc6-ae84-ead5ff09082c")
 	)
-	(label "Cleaner_~{OE}_0"
-		(at 156.21 88.9 0)
+	(label "Cleaner_LevelShift_~{OE}_0"
+		(at 152.4 88.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -20306,7 +20306,7 @@
 		)
 		(uuid "4899743f-a5cb-47e6-9fb7-e1f4a90c9f33")
 	)
-	(hierarchical_label "Cleaner_~{OE}_1"
+	(hierarchical_label "Cleaner_LevelShift_~{OE}_1"
 		(shape output)
 		(at 46.99 114.3 180)
 		(effects
@@ -20383,7 +20383,7 @@
 		)
 		(uuid "862f5e4c-5677-44af-98e0-b5d7f360c280")
 	)
-	(hierarchical_label "Cleaner_~{OE}_0"
+	(hierarchical_label "Cleaner_LevelShift_~{OE}_0"
 		(shape output)
 		(at 46.99 58.42 180)
 		(effects
@@ -21863,34 +21863,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 34.29 214.63 0)
+		(lib_id "power:GND")
+		(at 69.85 222.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0c129ac0-7be7-4390-9039-05d355ed4990")
-		(property "Reference" "C35"
-			(at 36.576 213.614 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22uF"
-			(at 36.576 215.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 34.29 214.63 0)
+		(uuid "0ccdab85-06f1-4838-8f1f-fe771732c67a")
+		(property "Reference" "#PWR041"
+			(at 69.85 228.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21898,8 +21880,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 34.29 214.63 0)
+		(property "Value" "GND"
+			(at 69.85 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.85 222.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21907,8 +21897,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 22UF 25V X5R 0805"
-			(at 34.29 214.63 0)
+		(property "Datasheet" ""
+			(at 69.85 222.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21916,17 +21906,8 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "KGM21AR51E226MU"
-			(at 34.29 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "KYOCERA AVX"
-			(at 34.29 214.63 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 69.85 222.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21935,15 +21916,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "92b85c82-b4e5-4a0c-b35f-e226f07b9189")
-		)
-		(pin "2"
-			(uuid "cfed5432-c971-47f0-993b-96fd116c44dd")
+			(uuid "849ff38f-57eb-4528-a151-082158fb7380")
 		)
 		(instances
 			(project "trigger-output-fmc"
 				(path "/1719e569-47c8-4fa0-8523-9c9686ef0dba/8aff4400-91ca-4a4b-be62-b9bc642d9108"
-					(reference "C35")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -22258,13 +22236,100 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 34.29 189.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "185610bf-c71f-41bd-8abb-9de911afb9a6")
+		(property "Reference" "C34"
+			(at 36.576 188.214 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 36.576 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+			(at 34.29 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.29 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CAP CER 22UF 35V X5R 1210"
+			(at 34.29 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GMK325BJ226MM-P"
+			(at 34.29 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Taiyo Yuden"
+			(at 34.29 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "73a46d7e-465f-4300-93aa-8a244dbb3599")
+		)
+		(pin "2"
+			(uuid "1d8f4c8c-4293-4676-9e9d-e0620d609867")
+		)
+		(instances
+			(project "trigger-output-fmc"
+				(path "/1719e569-47c8-4fa0-8523-9c9686ef0dba/8aff4400-91ca-4a4b-be62-b9bc642d9108"
+					(reference "C34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 34.29 208.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "185e78e2-716d-46e3-a559-405e46650f12")
 		(property "Reference" "TP3"
 			(at 32.766 203.2 0)
@@ -22558,17 +22623,16 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 33.02 208.28 90)
+		(at 31.75 208.28 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "2739f0d0-e0a3-451f-8a79-05dade430c00")
 		(property "Reference" "#FLG08"
-			(at 31.115 208.28 0)
+			(at 29.845 208.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22577,7 +22641,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 29.21 208.2799 90)
+			(at 27.94 208.2799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22586,7 +22650,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 33.02 208.28 0)
+			(at 31.75 208.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22595,7 +22659,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 33.02 208.28 0)
+			(at 31.75 208.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22604,7 +22668,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 33.02 208.28 0)
+			(at 31.75 208.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27757,7 +27821,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 59.69 226.06 0)
+		(at 60.96 229.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -27766,7 +27830,7 @@
 		(fields_autoplaced yes)
 		(uuid "2d53a4cf-80c0-4b5a-9664-cb13ba2bbb9d")
 		(property "Reference" "H3"
-			(at 62.23 223.5199 0)
+			(at 63.5 227.3299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27775,7 +27839,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 62.23 226.0599 0)
+			(at 63.5 229.8699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27784,7 +27848,7 @@
 			)
 		)
 		(property "Footprint" "rf-input-fmc:MountingHole_3.0mm_3.8mm_Pad_3.3mm_UniversalMarbleSlot"
-			(at 59.69 226.06 0)
+			(at 60.96 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27793,7 +27857,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 59.69 226.06 0)
+			(at 60.96 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27802,7 +27866,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 59.69 226.06 0)
+			(at 60.96 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27905,71 +27969,6 @@
 			(project "trigger-output-fmc"
 				(path "/1719e569-47c8-4fa0-8523-9c9686ef0dba/8aff4400-91ca-4a4b-be62-b9bc642d9108"
 					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 59.69 205.74 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3372bebd-a279-4a12-a150-8f43d527e147")
-		(property "Reference" "#PWR041"
-			(at 59.69 212.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 59.69 209.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 59.69 205.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 59.69 205.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 59.69 205.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "09f5a28e-2dd4-4585-81d0-d8436b905cd2")
-		)
-		(instances
-			(project "trigger-output-fmc"
-				(path "/1719e569-47c8-4fa0-8523-9c9686ef0dba/8aff4400-91ca-4a4b-be62-b9bc642d9108"
-					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -28106,17 +28105,16 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 33.02 231.14 90)
+		(at 31.75 231.14 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "469724f0-fe60-4b63-bdb1-2478dfb47f0d")
 		(property "Reference" "#FLG09"
-			(at 31.115 231.14 0)
+			(at 29.845 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28125,7 +28123,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 29.21 231.1399 90)
+			(at 27.94 231.1399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28134,7 +28132,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 33.02 231.14 0)
+			(at 31.75 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28143,7 +28141,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 33.02 231.14 0)
+			(at 31.75 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28152,7 +28150,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 33.02 231.14 0)
+			(at 31.75 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28179,7 +28177,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "48943108-85bb-4ee9-9eb9-6351d305dc03")
 		(property "Reference" "TP2"
 			(at 32.766 176.53 0)
@@ -29695,6 +29693,91 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
+		(at 69.85 240.03 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "5d7b19fc-2807-49f5-b760-157726e78bfa")
+		(property "Reference" "R76"
+			(at 73.152 239.014 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 72.644 240.792 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 69.85 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 69.85 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 69.85 240.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 69.85 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7de6df03-78db-4867-b63f-01a462800091")
+		)
+		(pin "2"
+			(uuid "f7dfe3b8-9e1c-46db-a3e6-43d2c7026126")
+		)
+		(instances
+			(project "trigger-output-fmc"
+				(path "/1719e569-47c8-4fa0-8523-9c9686ef0dba/8aff4400-91ca-4a4b-be62-b9bc642d9108"
+					(reference "R76")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
 		(at 323.85 181.61 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -30061,6 +30144,91 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 60.96 213.36 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "6f5f540d-4a24-4ead-a308-9c8b2d4b1275")
+		(property "Reference" "R43"
+			(at 64.262 212.344 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 63.754 214.122 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 60.96 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 60.96 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 60.96 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 60.96 213.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 60.96 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "358938df-63e5-4673-bc1e-6a0f7a806131")
+		)
+		(pin "2"
+			(uuid "29f6e0c0-323d-4ff4-aef4-b3c7f0c5e2f1")
+		)
+		(instances
+			(project "trigger-output-fmc"
+				(path "/1719e569-47c8-4fa0-8523-9c9686ef0dba/8aff4400-91ca-4a4b-be62-b9bc642d9108"
+					(reference "R43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 336.55 130.81 0)
 		(unit 1)
@@ -30301,6 +30469,91 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 69.85 219.71 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "827d0122-d7dd-4069-ad70-55f51e2bbca9")
+		(property "Reference" "R44"
+			(at 73.152 218.694 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 72.644 220.472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 69.85 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 69.85 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 69.85 219.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 69.85 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aaa6ea50-ca95-402b-8049-4a94f4f4624a")
+		)
+		(pin "2"
+			(uuid "dd01e041-ed8c-4c59-a8fa-38fd05314645")
+		)
+		(instances
+			(project "trigger-output-fmc"
+				(path "/1719e569-47c8-4fa0-8523-9c9686ef0dba/8aff4400-91ca-4a4b-be62-b9bc642d9108"
+					(reference "R44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 69.85 187.96 90)
 		(mirror x)
@@ -30363,71 +30616,6 @@
 			(project "trigger-output-fmc"
 				(path "/1719e569-47c8-4fa0-8523-9c9686ef0dba/8aff4400-91ca-4a4b-be62-b9bc642d9108"
 					(reference "#FLG010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 59.69 228.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "886b7022-c5f1-41a4-87d9-5bf788fe8091")
-		(property "Reference" "#PWR066"
-			(at 59.69 234.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 59.69 232.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 59.69 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 59.69 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 59.69 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "79f7aa9f-e09c-48cf-807a-1a257c73e6f1")
-		)
-		(instances
-			(project "trigger-output-fmc"
-				(path "/1719e569-47c8-4fa0-8523-9c9686ef0dba/8aff4400-91ca-4a4b-be62-b9bc642d9108"
-					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -31718,17 +31906,16 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 33.02 181.61 90)
+		(at 31.75 181.61 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "89d7fdf9-58b4-4367-b1d1-ca659b118608")
 		(property "Reference" "#FLG07"
-			(at 31.115 181.61 0)
+			(at 29.845 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31737,7 +31924,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 29.21 181.6099 90)
+			(at 27.94 181.6099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31746,7 +31933,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 33.02 181.61 0)
+			(at 31.75 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31755,7 +31942,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 33.02 181.61 0)
+			(at 31.75 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31764,7 +31951,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 33.02 181.61 0)
+			(at 31.75 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31786,15 +31973,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 59.69 217.17 0)
+		(at 60.96 237.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "8b9db3a2-4282-4ca7-909b-a138b95f35c9")
+		(uuid "8d976657-0f01-443a-af23-c32f29a6f604")
 		(property "Reference" "#PWR042"
-			(at 59.69 223.52 0)
+			(at 60.96 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31803,7 +31990,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 59.69 220.98 0)
+			(at 60.96 241.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31811,7 +31998,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 59.69 217.17 0)
+			(at 60.96 237.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31820,7 +32007,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 217.17 0)
+			(at 60.96 237.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31829,7 +32016,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 59.69 217.17 0)
+			(at 60.96 237.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31838,7 +32025,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "e30e48bf-e528-4d68-80f0-deb67c455a0c")
+			(uuid "cdb3c1e8-9114-48f8-a950-674c25d8ca6c")
 		)
 		(instances
 			(project "trigger-output-fmc"
@@ -31915,7 +32102,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 59.69 214.63 0)
+		(at 69.85 214.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -31924,7 +32111,7 @@
 		(fields_autoplaced yes)
 		(uuid "8e0272f6-b5e7-4e07-a385-862c878ac1c7")
 		(property "Reference" "H2"
-			(at 62.23 212.09 0)
+			(at 72.39 212.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31933,7 +32120,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 62.23 214.63 0)
+			(at 72.39 214.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31942,7 +32129,7 @@
 			)
 		)
 		(property "Footprint" "rf-input-fmc:MountingHole_3.0mm_M2.5_Pad_3.3mm_UniversalMarbleSlot"
-			(at 59.69 214.63 0)
+			(at 69.85 214.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31951,7 +32138,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 59.69 214.63 0)
+			(at 69.85 214.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31960,7 +32147,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 59.69 214.63 0)
+			(at 69.85 214.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31969,7 +32156,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 59.69 214.63 0)
+			(at 69.85 214.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33273,35 +33460,32 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 59.69 237.49 0)
+		(lib_id "Device:R_Small_US")
+		(at 60.96 234.95 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9a23987f-4624-40a9-a8d5-265f0803821f")
-		(property "Reference" "H4"
-			(at 62.23 234.9499 0)
+		(dnp yes)
+		(uuid "9a228947-14d3-4df4-ad93-62af4182a213")
+		(property "Reference" "R73"
+			(at 64.262 233.934 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
-			(at 62.23 237.4899 0)
+		(property "Value" "0R"
+			(at 63.754 235.712 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "rf-input-fmc:MountingHole_3.0mm_3.8mm_Pad_3.3mm_UniversalMarbleSlot"
-			(at 59.69 237.49 0)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 60.96 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33310,7 +33494,95 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 59.69 237.49 0)
+			(at 60.96 234.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 60.96 234.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 60.96 234.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 60.96 234.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b234e452-cb5d-4f97-a521-b76c439b1160")
+		)
+		(pin "2"
+			(uuid "cdd1cbbe-6a6f-40f7-b02e-cfb41358a64e")
+		)
+		(instances
+			(project "trigger-output-fmc"
+				(path "/1719e569-47c8-4fa0-8523-9c9686ef0dba/8aff4400-91ca-4a4b-be62-b9bc642d9108"
+					(reference "R73")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 69.85 234.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9a23987f-4624-40a9-a8d5-265f0803821f")
+		(property "Reference" "H4"
+			(at 72.39 232.4099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 72.39 234.9499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "rf-input-fmc:MountingHole_3.0mm_3.8mm_Pad_3.3mm_UniversalMarbleSlot"
+			(at 69.85 234.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33319,7 +33591,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 59.69 237.49 0)
+			(at 69.85 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33341,7 +33613,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 59.69 240.03 0)
+		(at 60.96 215.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -33349,7 +33621,7 @@
 		(dnp no)
 		(uuid "9b8ac4e9-46a3-4f4b-ab88-0b13ababc419")
 		(property "Reference" "#PWR067"
-			(at 59.69 246.38 0)
+			(at 60.96 222.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33358,7 +33630,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 59.69 243.84 0)
+			(at 60.96 219.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33366,7 +33638,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 59.69 240.03 0)
+			(at 60.96 215.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33375,7 +33647,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 240.03 0)
+			(at 60.96 215.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33384,7 +33656,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 59.69 240.03 0)
+			(at 60.96 215.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34819,15 +35091,15 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 34.29 189.23 0)
+		(at 34.29 237.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b53fc89a-ded4-4a0a-9d40-d9d66b00f720")
-		(property "Reference" "C34"
-			(at 36.576 188.214 0)
+		(uuid "b2bbb748-e107-4c44-b95b-61f401c23624")
+		(property "Reference" "C79"
+			(at 36.576 236.474 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34836,7 +35108,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 36.576 190.5 0)
+			(at 36.576 238.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34844,8 +35116,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 34.29 189.23 0)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+			(at 34.29 237.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34854,7 +35126,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 34.29 189.23 0)
+			(at 34.29 237.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34862,8 +35134,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 22UF 25V X5R 0805"
-			(at 34.29 189.23 0)
+		(property "Description" "CAP CER 22UF 35V X5R 1210"
+			(at 34.29 237.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34871,8 +35143,8 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "KGM21AR51E226MU"
-			(at 34.29 189.23 0)
+		(property "MPN" "GMK325BJ226MM-P"
+			(at 34.29 237.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34880,8 +35152,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "KYOCERA AVX"
-			(at 34.29 189.23 0)
+		(property "Manufacturer" "Taiyo Yuden"
+			(at 34.29 237.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34890,15 +35162,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "c81b5818-d7e9-45dc-ac18-4ea3657b5bae")
+			(uuid "83e5680a-056b-4342-8a41-9942e63e3b2f")
 		)
 		(pin "2"
-			(uuid "3327fa2c-1ab7-4845-abb2-97da2dcfe5a4")
+			(uuid "672e0444-60e8-40b6-a5fd-7d0ec8ac53bd")
 		)
 		(instances
 			(project "trigger-output-fmc"
 				(path "/1719e569-47c8-4fa0-8523-9c9686ef0dba/8aff4400-91ca-4a4b-be62-b9bc642d9108"
-					(reference "C34")
+					(reference "C79")
 					(unit 1)
 				)
 			)
@@ -35546,6 +35818,93 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 34.29 214.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d964b255-97fa-4b31-8415-5dcd4e9c549a")
+		(property "Reference" "C35"
+			(at 36.576 213.614 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 36.576 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+			(at 34.29 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.29 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CAP CER 22UF 35V X5R 1210"
+			(at 34.29 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "GMK325BJ226MM-P"
+			(at 34.29 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Taiyo Yuden"
+			(at 34.29 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f8d50c53-e42c-46fd-aab5-16b49080e4d7")
+		)
+		(pin "2"
+			(uuid "e957760b-7918-43b0-8cf8-8feacc5ba93f")
+		)
+		(instances
+			(project "trigger-output-fmc"
+				(path "/1719e569-47c8-4fa0-8523-9c9686ef0dba/8aff4400-91ca-4a4b-be62-b9bc642d9108"
+					(reference "C35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 374.65 190.5 90)
 		(unit 1)
@@ -35628,6 +35987,71 @@
 			(project "trigger-output-fmc"
 				(path "/1719e569-47c8-4fa0-8523-9c9686ef0dba/8aff4400-91ca-4a4b-be62-b9bc642d9108"
 					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 69.85 242.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ddb04180-1f3b-4ee0-a145-0a4f46443137")
+		(property "Reference" "#PWR066"
+			(at 69.85 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 69.85 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.85 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 69.85 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "26216767-823f-47b7-b9af-27f8b22f9d29")
+		)
+		(instances
+			(project "trigger-output-fmc"
+				(path "/1719e569-47c8-4fa0-8523-9c9686ef0dba/8aff4400-91ca-4a4b-be62-b9bc642d9108"
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -37005,95 +37429,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 34.29 237.49 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e4cf9fde-2329-4cf4-a626-353f972eae83")
-		(property "Reference" "C79"
-			(at 36.576 236.474 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22uF"
-			(at 36.576 238.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 34.29 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 34.29 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "CAP CER 22UF 25V X5R 0805"
-			(at 34.29 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "KGM21AR51E226MU"
-			(at 34.29 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "KYOCERA AVX"
-			(at 34.29 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "21ae4690-33cd-412a-a839-fb55cc6a8698")
-		)
-		(pin "2"
-			(uuid "44ef6499-4a7f-414e-9082-bea74ea79ef4")
-		)
-		(instances
-			(project "trigger-output-fmc"
-				(path "/1719e569-47c8-4fa0-8523-9c9686ef0dba/8aff4400-91ca-4a4b-be62-b9bc642d9108"
-					(reference "C79")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 59.69 203.2 0)
+		(at 60.96 208.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -37102,7 +37439,7 @@
 		(fields_autoplaced yes)
 		(uuid "e8c28b2c-8ae1-4f8c-b0aa-2b553c03ab0e")
 		(property "Reference" "H1"
-			(at 62.23 200.66 0)
+			(at 63.5 205.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37111,7 +37448,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 62.23 203.2 0)
+			(at 63.5 208.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37120,7 +37457,7 @@
 			)
 		)
 		(property "Footprint" "rf-input-fmc:MountingHole_3.0mm_M2.5_Pad_3.3mm_UniversalMarbleSlot"
-			(at 59.69 203.2 0)
+			(at 60.96 208.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37129,7 +37466,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 59.69 203.2 0)
+			(at 60.96 208.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37138,7 +37475,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 59.69 203.2 0)
+			(at 60.96 208.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37147,7 +37484,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 59.69 203.2 0)
+			(at 60.96 208.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37415,7 +37752,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "f2b48014-2bc3-4db7-850f-3f637854123f")
 		(property "Reference" "TP4"
 			(at 32.766 226.06 0)
